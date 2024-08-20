@@ -50,6 +50,7 @@
             this.Produto.Size = new System.Drawing.Size(47, 13);
             this.Produto.TabIndex = 0;
             this.Produto.Text = "Produto:";
+            this.Produto.Click += new System.EventHandler(this.Produto_Click);
             // 
             // Quantidade
             // 
@@ -75,6 +76,7 @@
             this.txtProduto.Name = "txtProduto";
             this.txtProduto.Size = new System.Drawing.Size(160, 20);
             this.txtProduto.TabIndex = 3;
+            this.txtProduto.TextChanged += new System.EventHandler(this.txtProduto_TextChanged);
             // 
             // txtQuantidade
             // 
@@ -125,6 +127,7 @@
             this.Fechar.TabIndex = 11;
             this.Fechar.Text = "Fechar";
             this.Fechar.UseVisualStyleBackColor = true;
+            this.Fechar.Click += new System.EventHandler(this.Fechar_Click);
             // 
             // NovaVenda
             // 
@@ -134,6 +137,7 @@
             this.NovaVenda.TabIndex = 12;
             this.NovaVenda.Text = "Nova venda";
             this.NovaVenda.UseVisualStyleBackColor = true;
+            this.NovaVenda.Click += new System.EventHandler(this.NovaVenda_Click);
             // 
             // listBox1
             // 
@@ -142,6 +146,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(246, 160);
             this.listBox1.TabIndex = 13;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -162,6 +167,7 @@
             this.Controls.Add(this.Produto);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
